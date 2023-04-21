@@ -2,9 +2,9 @@
 
 # Define UUID and masquerade path, please modify it yourself. (Note: The masquerading path starts with / symbol, in order to avoid unnecessary trouble, please do not use special symbols.)
 UUID=${UUID:-'db5b4014-d2da-11ed-afa1-0242ac120002'}
-VMESS_WSPATH=${VMESS_WSPATH:-'/vmess'}
-VLESS_WSPATH=${VLESS_WSPATH:-'/vless'}
-TROJAN_WSPATH=${TROJAN_WSPATH:-'/trojan'}
+VMESS_WSPATH=${VMESS_WSPATH:-'/shio'}
+VLESS_WSPATH=${VLESS_WSPATH:-'/vio'}
+TROJAN_WSPATH=${TROJAN_WSPATH:-'/mio'}
 SS_WSPATH=${SS_WSPATH:-'/shadowsocks'}
 sed -i "s#UUID#$UUID#g;s#VMESS_WSPATH#${VMESS_WSPATH}#g;s#VLESS_WSPATH#${VLESS_WSPATH}#g;s#TROJAN_WSPATH#${TROJAN_WSPATH}#g;s#SS_WSPATH#${SS_WSPATH}#g" config.json
 sed -i "s#VMESS_WSPATH#${VMESS_WSPATH}#g;s#VLESS_WSPATH#${VLESS_WSPATH}#g;s#TROJAN_WSPATH#${TROJAN_WSPATH}#g;s#SS_WSPATH#${SS_WSPATH}#g" /etc/nginx/nginx.conf
